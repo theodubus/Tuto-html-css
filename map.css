@@ -1,0 +1,481 @@
+body
+{
+	background: url(images/fond_console.jpeg);
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+header.menu
+{
+	overflow: hidden;
+	background-color: rgba(67, 167, 16, 0.8);
+	margin-bottom: 4.5em;
+	border-radius: 30px;
+}
+
+h1
+{
+	color:white;
+	text-align: center;
+	font-family: arial, "arial black", impact, sans-serif;
+	font-size: 4em;
+}
+
+figure.normal
+{
+	display: flex;
+	flex-wrap: wrap-reverse;
+	height:230px;
+	overflow:hidden;
+}
+
+figure.grand_html
+{
+	display: flex;
+	flex-wrap: wrap-reverse;
+	height:170px;
+	overflow:hidden;
+	margin-right: -0.5em;
+	margin-left: -4em;
+}
+
+figure.petit_html
+{
+	display: flex;
+	flex-wrap: wrap-reverse;
+	height:90px;
+	overflow:hidden;
+	margin-right: 0.30em;
+	margin-top: 1.40em;
+}
+
+figure.grand_css
+{
+	display: flex;
+	flex-wrap: wrap-reverse;
+	height:170px;
+	overflow:hidden;
+	margin-left: 1em;
+	margin-right: -0.8em;
+}
+
+figure.petit_css
+{
+	display: flex;
+	flex-wrap: wrap-reverse;
+	height:85px;
+	overflow:hidden;
+	margin-left: 0.30em;
+	margin-top: 1.40em;
+}
+
+img.html
+{
+	height: 20em;
+	width: 21.5em;
+	margin: auto;
+	margin-bottom: -18px; 	
+}
+
+img.css
+{
+	height: 17em;
+	width: 12em;
+	margin: auto;
+	margin-bottom: 3px; 
+}
+
+img.grand_html
+{
+	height: 14em;
+	width: 14.5em;
+	margin: auto;
+	margin-bottom: -8px;
+	margin-right: -10px; 
+}
+
+img.petit_html
+{
+	height: 7.25em;
+	width: 7.5em;
+	margin: auto;
+	margin-bottom: -3px;
+	margin-right: -4px;
+}
+
+img.petit_css
+{
+	height: 6em;
+	width: 4.5em;
+	margin: auto;
+	margin-bottom: 3px;
+	margin-left: 20px;
+}
+
+img.grand_css
+{
+	height: 12em;
+	width: 9em;
+	margin: auto;
+	margin-bottom: 8px;
+	margin-left: 10px;
+}
+
+p.language
+{
+	color: white;
+	font-family: impact, "arial black", sans-serif;
+	text-align: center;
+	font-size: 3em;
+	width: 50%;
+	margin: auto;
+	margin-top: 0.5em;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+span.symboles
+{
+	display: none;
+}
+
+section:hover span.symboles
+{
+	display: inline;
+}
+
+section:hover
+{
+	background-color: rgba(255,158,0,0.9);
+}
+
+section
+{
+	width: 25em;
+	background-color: rgba(255,158,0,0.65);
+	border-radius: 50px;
+	height: 24em;
+}
+
+section.html
+{
+	margin-right: 5%; 
+}
+
+section.css
+{
+	margin-left: 5%; 
+}
+
+div.images
+{
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+}
+
+header.onglet
+{
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+	width: 150%;
+	margin-left: -25%;
+	margin-right: -25%;
+}
+
+div.bandeau_html_grand
+{
+	margin-left: 0;
+	width: 50%;
+	display: flex;
+	justify-content: flex-end;
+	border-radius: 50px;
+	background-color: rgba(230,90,10,0.98);
+}
+
+div.bandeau_html_petit
+{
+	margin-left: 0;
+	width: 50%;
+}
+
+div.bandeau_html_petit_coloré
+{
+	margin-left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	border-radius: 30px;
+	background-color: rgba(230,90,10,0.9); 
+}
+
+.description_grand, .description_grand_css, .description_grand_html
+{
+	color: white;
+	margin:auto;
+}
+
+.description_petit
+{
+	color: rgba(255,255,255,0.6);
+	margin:auto;
+}
+
+li.description_grand_css
+{
+	font-family: verdana, trebuchet ms, sans-serif;
+	font-size: 1.3em;
+	margin-top:0.7em;
+	margin-bottom: 1.2em; 
+	margin-left: 3.3em;
+}
+
+li.description_grand_html
+{
+	font-family: verdana, trebuchet ms, sans-serif;
+	font-size: 1.3em;
+	margin-top:0.8em;
+	margin-bottom: 1.2em; 
+	margin-left: 2em;
+}
+
+li.description_petit
+{
+	font-family: verdana, trebuchet ms, sans-serif;
+	font-size: 1.2em;
+	margin-bottom: 0.5em;
+}
+
+ul.petit_html
+{
+	margin-top: 0.5em;
+	margin-left: 20%;
+}
+
+ul.petit_css
+{
+	margin-top: 0.5em;
+	margin-left: 23%;
+}
+
+h1.description_grand
+{
+	font-family: impact, sans-serif;
+	font-size: 3.5em;
+	margin-top: 0.2em;
+}
+
+h1.description_petit
+{
+	font-family: impact, sans-serif;
+	font-size: 2.25em;
+	margin-top: 0.2em;
+}
+
+aside.html_grand
+{
+	margin-right: 50px;
+	width: 45%;
+	position: relative;
+}
+
+aside.css_petit
+{
+	margin-left: -23px;
+	width: 55%;
+	position: relative;
+}
+
+aside.css_grand
+{
+	margin-left: 45px;
+	width: 45%;
+	position: relative;
+}
+
+aside.html_petit
+{
+	margin-right: -48px;
+	width: 55%;
+	position: relative;
+}
+
+div.bandeau_css_grand
+{
+	margin-right: 0;
+	width: 50%;
+	display: flex;
+	justify-content: flex-start;
+	border-radius: 50px;
+	background-color: rgba(10,50,240,0.85);
+}
+
+div.bandeau_css_petit
+{
+	margin-right: 0;
+	width: 50%;	
+}
+
+div.bandeau_css_petit_coloré
+{
+	margin-right: 0;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	border-radius: 30px;
+	background-color: rgba(10,50,240,0.55);
+}
+
+/* à partir d'ici en dessous du bandeau */
+
+div.conteneur
+{
+	display: flex;
+	margin-top: 3em;
+	margin-left: 5px;
+}
+
+div.colonne_gauche
+{
+	width: 50%;
+}
+
+div.colonne_droite
+{
+	width: 50%;
+}
+
+article
+{
+	width: 97%;
+	border-radius: 40px;
+	margin-bottom: 20px;
+	height: 181px; /* valeur sans cliquer, à changer potentiellement */
+	overflow: hidden;
+	margin-left: 1%;
+}
+
+article:hover
+{
+	-webkit-box-shadow: 0 0 5px white;
+        box-shadow: 0 0 20px white;
+}
+
+article[class*=HTML]
+{
+	background-color: rgba(230,90,10,0.98);
+}
+
+article[class*=CSS]
+{
+	background-color: rgba(10,50,240,0.90);
+}
+
+h2
+{
+	text-align: center;
+	font-family: impact, sans-serif;
+	font-size: 2.5em;
+	color: white;
+	margin: auto; 
+	margin-top: 20px; 
+}
+
+p.commandes, ul.CSS
+{
+	color: white;
+	text-align: justify;
+	margin: 15px 25px 25px 25px;
+	font-size: 1.5em;
+}
+
+a:focus article
+{
+	height: auto;
+	box-shadow: none;
+}
+
+a[class*=article]
+{
+	display: block;
+	width: 100%;
+}
+
+.bold
+{
+	font-weight: bold;
+}
+
+.exemple
+{
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.center
+{
+	display: block;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.center_2
+{
+	display: block;
+	text-align: center;
+}
+
+.ul
+{
+	display: inline-block;
+	font-size: 1.5em;
+	margin-left: 15%;
+}
+
+span.plus
+{
+	display: inline-block;
+	font-size: 0.9em;
+	color: rgb(188,27,0);
+	margin-top: 13px;
+	margin-bottom: 10px;
+	margin-left: 22%;
+	margin-right: 20%;
+}
+
+span.plus_css
+{
+	display: inline-block;
+	font-size: 0.9em;
+	color: rgb(0,10,100);
+	margin-top: 13px;
+	margin-bottom: 10px;
+	margin-left: 22%;
+	margin-right: 20%;
+}
+
+a:focus span[class*=plus]
+{
+	display: none;
+}
+
+.decalage_1
+{
+	display: inline-block;
+	margin-left: 7%;
+}
+
+.decalage_2
+{
+	display: inline-block;
+	margin-left: 13.5%;
+}
+
+li.coms
+{
+	margin-bottom: 1em;
+}

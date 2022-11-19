@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../map.css" />
+        <title>HTML</title>
+    </head>
+
+    <body>
+        <header class="onglet">
+            <div class="bandeau_html_grand">
+                <aside class="html_grand">
+                    <h1 class="description_grand">HTML</h1>
+                    <ul>
+                        <li class="description_grand_html">HyperText Markup Language</li>
+                        <li class="description_grand_html">Définit le contenu de la page</li>
+                    </ul>
+                </aside>
+                <figure class="grand_html">       
+                    <img src="../images/html.png" class="grand_html">
+                </figure>
+            </div>
+            <div class="bandeau_css_petit">
+                <a href="../css/menu_css.html">
+                    <div class="bandeau_css_petit_coloré">
+                        <figure class="petit_css">
+                            <img src="../images/css.png" class="petit_css">
+                        </figure>
+                        <aside class="css_petit">
+                            <h1 class="description_petit">CSS</h1>
+                            <ul class="petit_css">
+                                <li class="description_petit">Cascading Style Sheets</li>
+                                <li class="description_petit">Définit la mise en page</li>
+                            </ul>
+                        </aside>
+                    </div>
+                </a>
+            </div>
+        </header>
+        <div class="conteneur">
+            <div class="colonne_gauche">
+                <a href="#article1" class="article1">
+                    <article class="HTML_1">
+                        <h2>Les balises</h2>
+                        <p class="commandes">
+                            Une balise définit le type d'objet qu'on va décrire. Pour
+                            délimiter le début et la fin de l'objet décrit on a ainsi des
+                            <span class="plus">Cliquez sur la bulle pour afficher plus</span>
+                            balises de début et des balises de fin.
+                            La synthaxe pour les balises de début est : <br><br>
+                            <span class="center"><span class="bold">&lt;</span>balise<span class="bold">&gt;</span></span>
+                            <br>
+                            Et celle pour les balises de fin est : <br><br>
+                            <span class="center"><span class="bold">&lt;/</span>balise<span class="bold">&gt;</span></span>
+                            <br>
+                            Cependant certaines balises n'ont besoin que de balises de
+                            début, comme par exemple les balises d'images et de passage
+                            à la ligne.
+                        </p>
+                    </article>
+                </a>
+                <a href="#article2" class="article2">
+                    <article class="HTML_2">
+                        <h2>Les textes</h2>
+                        <p class="commandes">
+                            On trouve généralement du texte dans trois types de balises :
+                            les titres, les paragraphes et les listes.<br>
+                            <span class="plus">Cliquez sur la bulle pour afficher plus</span>
+                            <br> - Les balises de
+                            titres sont "hi", avec i entre 1 et 6. Plus i sera petit et
+                            plus votre titre sera interprété comme important par votre
+                            ordinateur. Par défaut il apparaîtra plus gros selon son
+                            importance mais gardez à l'idée que les balises de titre ne servent
+                            pas à cela, la taille des textes se règle avec CSS. <br><br>
+                            <span class="exemple">Exemple d'utilisation :</span> <br><br>
+                            <span class="center">&lt;h1&gt;titre&lt;/h1&gt;</span><br>
+                            - La balise de paragraphe est "p". Le passage à la ligne
+                            se fait souvent dans les paragraphes, même si il se fait aussi
+                            dans d'autres types de textes. La balise de passage à la ligne
+                            est "br" et n'a pas de balise de fin. Après un passage à la ligne
+                            avec "br" vous pouvez également passez à la ligne dans votre code
+                            source pour plus de lisibilité mais ce n'est pas obligatoire <br><br>
+                            <span class="exemple">Exemple d'utilisation :</span><br><br>
+                            <span class="center">&lt;p&gt;texte ligne 1&lt;br&gt;texte ligne 2&lt;/p&gt;</span><br>
+                            - Les balises de listes sont "ul" et "ol".
+                            La balise des éléments d'une liste est "li". Par défaut,
+                            "ul" met des puces devant les éléments tandis que "ol" les numérote. <br><br>
+                            <span class="exemple">Exemple d'utilisation :</span><br><br>
+                            <span class="ul">&lt;ul&gt;</span><br>
+                            <span class="center">&lt;li&gt;élément 1&lt;/li&gt; <br>
+                            &lt;li&gt;élément 2&lt;/li&gt; <br>
+                            &lt;li&gt;élément 3&lt;/li&gt; <br></span>
+                            <span class="ul">&lt;/ul&gt;</span><br><br>
+                            Note : Certains caractères déstinés à être dans un paragraphe
+                            ne peuvent pas être écrits tels quels dans le code source car ils
+                            sont déjà utilisés par le langage html, ainsi, on utilise des codes
+                            pour les représenter :<br><br>
+                            <span class="center">"&amp;amp;" pour "&amp;" <br>
+                            "&amp;lt;" pour "&lt;" <br>
+                            "&amp;gt;" pour "&gt;" </span><br><br>
+                            Ainsi pour afficher : <br><br><span class="center_2">"5 &gt; x &amp; y &lt; 4 sont deux inégalités"</span> <br>
+                            il faut écrire :<br><br><span class="center_2"> "&lt;p&gt; 5 &amp;gt; 2 &amp;amp; 1 &amp;lt; 4 sont deux inégalités &lt;/p&gt;"</span>
+                        </p>
+                    </article>
+                </a>
+                <a href="#article3" class="article3">
+                    <article class="HTML_3">
+                        <h2>Les liens</h2>
+                        <p class="commandes">
+                            Le désir d'utilisation simple et rapide de liens est une
+                            des pricipales raisons qui ont motivé la création du language
+                            <span class="plus">Cliquez sur la bulle pour afficher plus</span>
+                            html. Un lien se résume en un élément qui, une fois cliqué, amène vers
+                            une autre destination que l'emplacement du fichier.
+                            L'élément cliquable est souvent un ou plusieurs mots ("cliquez ici"),
+                            mais ce n'est pas toujours le cas. On peut rendre à peu près tout les éléments
+                            de la page cliquables, comme des photos, des blocs (comme le bandeau bleu en haut de
+                            cette page emmenant vers la page CSS de ce même site), etc. La balise de lien est "a"
+                            et tout comme les balises d'images, elle a besoin d'un attribut pour mieux la définir.
+                            Cet attibut est "href" et sert à définir où emmène le lien, la destination. Cela peut être beaucoup de choses, une image dans le dossier de votre site par exemple, ou alors un autre document html de ce même dossier (donc une autre page du site), ou bien un autre site web.
+                            Dans cet attribut il faut donc mettre soit le chemin relatif vers un autre fichier du dossier de votre site (voir article sur "Les images"), soit une url complète (https://...).
+                            Sera inclus dans votre lien tout ce qui se trouve entre la balise de début et la balise de fin. <br><br>
+                            <span class="exemple">Exemples d'utilisation :</span><br><br>
+                            &lt;a href="monts/pyrenees.html"&gt;Voir d'autres montagnes&lt;/a&gt; <br><br>
+                            &lt;a href="https://www.google.com"&gt; <br>
+                            <span style="margin-left: 7%">&lt;div&gt;<br></span>
+                            <span style="margin-left: 10%">...<br></span>
+                            <span style="margin-left: 7%">&lt;/div&gt;<br></span>
+                            &lt;/a&gt;<br><br>
+                            Le premier exemple rendra "Voir d'autres montagnes" cliquable et emmènera
+                            vers la page "pyrenees.html" dans le sous-dossier "monts". <br><br>
+                            Le deuxième exemple rendra toute la div cliquable et emmènera vers la page
+                            d'accueil de google.<br><br>
+                            Vous pouvez également faire envoyer un mail avec un lien, en mettant comme attribut
+                            href="mailto:adresse@email.com" (changer l'adresse mail). Pour préremplir le message, mettez le texte souhaité entre la balise de début et celle de fin. (Pour des raisons évidentes de sécurité, cette commande se contente d'ouvrir l'application mail, de saisir le destinataire et le message pré-rempli, mais en aucun cas n'envoie le mail, cette dernière tâche restant à la charge de l'utilisateur).
+                        </p>
+                    </article>
+                </a>
+                <a href="#article4" class="article4">
+                    <article class="HTML_4">
+                        <h2>Page complète</h2>
+                        <p class="commandes">
+                            Dans cette section, nous allons aborder les derniers points manquants
+                            concernant la partie html d'un site web. Tout
+                            <span class="plus">Cliquez sur la bulle pour afficher plus</span>
+                            d'abord il est temps d'apprendre à écrire des commentaires dans votre code, bien qu'il soit facile de comprendre un code de quelques lignes, une page web ne se résume pas en une dizaines de balises. Dans un code long, il est parfois utile de vous laisser une note pour que vous puissiez vous comprendre en revenant dessus plus tard. Cependant, cette note ne doit pas être interprétée par votre ordinateur car il s'agit uniquement d'une information vous servant à vous retrouver dans votre code. Pour ce faire, il suffit d'écrire ce commentaire de la manière suivante : <br><br>
+                            <span class="center">&lt;--!commentaire--&gt;</span><br>
+                            Ainsi, vous pourrez mettre des annotations à côté de certaines lignes dont vous avez peur d'oublier l'utilité.<br><br>
+
+                            Maintenant que vous savez écrire des commentaires, il ne reste plus qu'à connaître la configuration minimale d'une page html et de faire le lien entre html et css. La configuration minimale d'une page est un peu complexe, il faut soit la noter, soit la connaître, la voici : 
+                            <br><br>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html&gt;<br>
+                            <span class="decalage_1">&lt;head&gt;</span><br>
+                            <span class="decalage_2">&lt;meta charset="utf-8" /&gt;<br>
+                            &lt;link rel="stylesheet" href="chemin" /&gt;<br>
+                            &lt;title&gt;Titre&lt;/title&gt;</span><br>
+                            <span class="decalage_1">&lt;/head&gt;<br><br>
+                            &lt;body&gt;<br><br>
+                            &lt;/body&gt;</span><br>
+                            &lt;/html&gt;<br><br>
+
+                            L'en-tête de sites simples est souvent composée de trois lignes, la première servant à définir le type d'encodage (utf-8 à prioriser), la deuxième à indiquer le lien vers un fichier CSS définissant la présentation de la page (remplacer "chemin" par le chemin relatif du fichier html vers le fichier CSS en n'oubliant pas de rajouter le nom de l'extension ".css" après le nom du fichier CSS.), la troisiéme à définir le titre de la page, c'est celui qui apparaît en bleu suite à une requête sur un moteur de recherche comme Google, il apparaît également en tant que nom de l'onglet (évitez donc les titres trop longs). Le contenu de la page se place entre la balise de début et de fin de "body". <br><br>
+                            Avec cette page de base vous savez maintenant également comment lier votre code html au code CSS. Cependant il existe aussi d'autres méthodes, moins conseillées mais fonctionnelles. Vous pouvez par exemple entrer votre code CSS directement dans l'en-tête en rentrant cette ligne : 
+                            <br><br>
+                            <span class="center">&lt;style&gt;{code css}&lt;/style&gt;</span><br>
+                            Ou vous pouvez également de manière plus spécifique entrer du code CSS dans un attribut "style" : <br><br>
+                            <span class="center">&lt;p style:"code css"&gt;Mon texte&lt;/p&gt;</span><br>
+                            Cette dernière méthode aura comme particularité de ne que cibler le contenu de la balise dont elle est l'attribut (pas besoin de cibler dans le code CSS). Ces deux dernières méthodes alternatives sont déconseillées, premièrement car cela fait mélanger le contenu et la présentation de la page ce qui peut rendre beaucoup plus complexe la création d'une page web, mais également car un même fichier CSS peut gérer la mise en page de plusieurs fichier html, ainsi en utilisant la méthode la plus conseillée, pas besoin de redéfinir l'affichage de tel type de texte, tel type de bloc dans une nouvelle page que vous auriez envie de créer, car vous aurez juste à lier votre nouvelle page au fichier CSS déjà existant. (Les autres méthodes servent en pratique plus à resoudre certains problèmes rares et très spécifiques, comme un ciblage utilisant plusieurs fonctionnalités compliquées, pour un affichage spécifique utilisé une seule fois par exemple).
+                        </p>
+                    </article>
+                </a>
+            </div>
+            <div class="colonne_droite">
+                <a href="#article5" class="article5">
+                    <article class="HTML_5">
+                        <h2>Les images</h2>
+                        <p class="commandes">
+                            Les balises d'images sont des balises seules, sans balises
+                            de fin. Pour les utiliser il faut indiquer où trouver l'image en
+                            <span class="plus">Cliquez sur la bulle pour afficher plus</span>
+                            indiquant son chemin (image dans l'ordinateur) ou alors un
+                            lien web. Pour renseigner le chemin ne prenez pas l'habitude de
+                            renseigner le chemin absolu (C:/Users/...), cette méthode amène
+                            parfois à des disfonctionnement et ne fonctionnera plus si votre
+                            fichier html est destiné à devenir un site web, utilisez plutôt 
+                            un lien relatif qui se base sur la position de votre fichier : <br><br>
+                            "image.jpg" en tant que chemin fera chercher à l'ordinateur "image.jpg"
+                            dans le même dossier que le fichier html. <br><br>
+                            "mon_dossier/image.jpg" fera chercher "image.jpg" dans le sous-dossier
+                            "mon_dossier" ce dernier dans le même dossier que le fichier html. <br><br>
+                            "../image.jpg" fera chercher "image.jpg" dans le dossier supérieur à celui 
+                            contenant le fichier html.<br><br>
+                            Vous pouvez ainsi selectionner des images en combinant ces méthodes et 
+                            en faisant par exemple :<br><br>
+                            "../dossier_images/photos_montagne/alpes.jpg" <br><br>
+                            Notez qu'il est conseillé de créer un dossier réservé uniquement à votre
+                            site et de créer au sein de ce dossier une arborescence simple entre les éléments,
+                            en ne créant pas trop de dossiers inutiles et en regroupant les objets (comme les images)
+                            dans des mêmes dossiers par exemple. Évitez aussi les espaces, accents et majuscules
+                            dans vos noms de dossiers et fichiers, cela peut parfois mener à des erreurs. <br><br>
+                            La balise image est "img" et la synthaxe pour la source (à mettre dans la balise) est
+                            "src="chemin/lien"". Il est conseillé mais non obligatoire de lui rajouter un attribu "alt" qui
+                            s'exprime de la même manière que la source mais qui au lieu de contenir un chemin, contient une 
+                            brève description de l'image, cela sert à mieux référencer votre image et donc votre site sur
+                            les moteurs de recherche. <br><br>
+                            <span class="exemple">Exemple d'utilisation :</span><br><br>
+                            <span class="center"> &lt;img src="sous_dossier/alpes.jpg" alt="montagne enneigée"&gt; </span>
+                            <br><br>
+                            Les images sont généralement insérées dans des textes. Cependant, pour des images importantes dans un site et qui n'ont pas de lien particulier avec un texte on peut les insérer dans un espace appelé "figure" (mais en aucun cas on ne met d'image seule dans un site, c'est à dire ni dans une figure, ni dans un paragraphe). Dans une figure, on peut également ajouter une légende à une image, en utilisant la balise "figcaption". <br><br>
+                            <span class="exemple">Exemple d'utilisation :</span><br><br>
+                            &lt;figure&gt;<br>
+                            <span class="decalage_1">&lt;img src="photo.jpg" alt="montagne"&gt;<br>
+                            &lt;figcaption&gt;Vacances 2017&lt;/figcaption&gt;</span><br>
+                            &lt;/figure&gt;<br>
+                        </p>
+                    </article>
+                </a>
+                <a href="#article6" class="article6">
+                    <article class="HTML_6">
+                        <h2>Les marqueurs et blocs</h2>
+                        <p class="commandes">
+                            - Les marqueurs sont des balises à utiliser au sein d'un texte pour mettre
+                            en avant une partie de ce dernier. Il en existe trois
+                            <span class="plus">Cliquez sur la bulle pour afficher plus</span>
+                            principaux : "em" (texte important), "strong" (texte très important) et "mark" (texte spécial).
+                            Par défaut, "em" mettra son contenu en italique, "strong" le mettra en gras et "mark"
+                            le surlignera. Notez bien que ces balises ne servent pas à ça, tout ça est à faire en CSS,
+                            l'ordinateur affiche les contenus comme cela comme il pourrait le faire autrement. Il existe
+                            également une balise générique qui ne fait rien par défaut mais qui sert aussi à encadrer une partie d'un texte, il s'agit de "span". Cette balise est parfois très utilisée au détriment des
+                            premières citées. Pourquoi s'embêter à utiliser des "em" et des "strong" quand un "span" avec une classe ferait la même chose et demande moins à réfléchir ? La réponse est pour le référencement, en utilisant des balises précises et non génériques, votre site est mieux compris par l'ordinateur, mieux construit, mieux référencé. Beaucoup de webmasters ont du mal
+                            car ils n'ont pas pris cette habitude mais si vous débutez, prenez la dès le début.<br><br>
+                            <span class="exemple">Exemple d'utilisation :</span><br><br>
+                            &lt;p&gt;J'ai rendez-vous &lt;em&gt;demain&lt;/em&gt;, je suis un peu occupé.&lt;/p&gt;<br><br>
+
+                            - Les blocs sont des éléments servant à en contenir d'autres. Un bloc peut contenir des images,
+                            du texte, d'autres blocs, etc... Utiliser des blocs au lieu de directement déposer chaque élément directement dans la page ne change rien à son contenu mais permet de mieux gérer la mise en page, les propriétés d'un groupe d'éléments, la position au sein de la page de ces derniers... Les principaux types de blocs sont : "header" (en-tête), "nav" (menu pour naviguer au sein de la page ou du site), "section" (tout est dans le nom), "article" (tout est dans le nom), "aside" (petites infos complémentaires généralement sur le côté) et "footer" (pied de page). Sachez qu'il est tout à fait possible de mettre ces blocs les uns dans les autres. Tout comme pour les marqueurs, il existe une balise générique de bloc, également très utilisée et dont vous avez sans doute déjà entendu parler, la balise "div". Pour les mêmes raisons que pour "span", utilisez de préférence les balises non génériques.<br><br>
+                            <span class="exemple">Exemple d'utilisation :</span><br><br>
+                            &lt;header&gt;<br>
+                            <span class="decalage_1">&lt;h1&gt;Titre&lt;/h1&gt;<br>
+                            &lt;p&gt;...&lt;p&gt;</span><br>
+                            <span class="decalage_2">...</span><br>
+                            &lt;/header&gt;<br><br>
+                            &lt;section&gt;<br>
+                            <span class="decalage_1">...</span><br>
+                            &lt;/section&gt;<br><br>
+                            &lt;section&gt;<br>
+                            <span class="decalage_1">&lt;article&gt;</span><br>
+                            <span class="decalage_2">...</span><br>
+                            <span class="decalage_1">&lt;/article&gt;</span><br>
+                            <span class="decalage_1">&lt;article&gt;</span><br>
+                            <span class="decalage_2">...</span><br>
+                            <span class="decalage_1">&lt;/article&gt;</span><br>
+                            &lt;/section&gt;<br><br>
+                            &lt;footer&gt;<br>
+                            <span class="decalage_1">...</span><br>
+                            &lt;/footer&gt;<br>
+                        </p>
+                    </article>
+                </a>
+                <a href="#article7" class="article7">
+                    <article class="HTML_7">
+                        <h2>Les attributs d'identification</h2>
+                        <p class="commandes">
+                            Il existe toutes sortes d'attributs. Par exemple pour les images
+                            il y a l'attribut "src" pour indiquer le chemin de l'image et 
+                            <span class="plus">Cliquez sur la bulle pour afficher plus</span>
+                            "alt" pour la décrire et donc la référencer. Pour les liens on a l'attribut 
+                            "href" pour savoir où le lien doit renvoyer, il existe donc tout un tas 
+                            d'attributs avec divers usages. Les attributs s'écrivent après le nom de la balise de début et à l'intérieur de cette dernière (notez qu'une balise peut avoir plusieurs attributs). Ils s'expriment de cette manière : <br><br>
+                            <span class="center"> &lt;balise attribut="contenu attribut"&gt; </span><br>
+                            Nous nous intéressons ici aux attributs d'identification, qui peuvent se mettre sur n'importe quelle balise et servent principalement au ciblage avec CSS. Il y en a deux, "class" et "id". Le contenu d'un attribut id ne peut se retrouver qu'une seule fois par page tandis que celui d'un attribut class n'a pas de limite. Ainsi si vous avez plusieurs paragraphes à mettre en italique dans votre page, vous pouvez créer la classe "italique" (class="italique") que vous mettrez dans chaque paragraphe concerné. Cela ne les mettra pas directement en italique mais permettra le ciblage CSS pour le faire. (Note : par exemple dans le code source de cette page, les "exemple d'utilisation" sont dans des span ayant pour classe "exemple", et dans le code CSS les textes ayant cette classe sont mis en gras et sont soulignés). <br><br>
+                            <span class="exemple">Exemple d'utilisation :</span><br><br>
+                            <span class="center">&lt;p class="italique"&gt;texte en italique&lt;/p&gt;</span><br>
+                            Vous vous demandez peut-être quel est l'intérêt de l'attribut "id" si on ne peut utiliser le contenu de chaque id qu'une fois par page. La réponse est qu'en plus de permettre le ciblage avec CSS, id permet aussi le ciblage par les liens. C'est à dire que vous pouvez créer un lien qui vous enverra à cet endroit précis de la page (d'où le fait qu'il n'y ai d'un contenu d'id par page). Cet attribut est donc très utilisé pour rendre possible les sommaires. <br><br>
+                            <span class="exemple">Exemple d'utilisation :</span><br><br>
+                            <span style="font-size: 1.1em">&lt;a href="#article 2"&gt;<br>
+                            ...<br>
+                            ...<br>
+                            (plus loins dans la page)<br>
+                            ...<br>
+                            ...<br>
+                            &lt;h1 id="article 2"&gt;La formation des montagnes&lt;/h1&gt;</span>
+                        </p>
+                    </article>
+                </a>
+            </div>      
+        </div>
+	</body>
+</html>

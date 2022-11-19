@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../map.css" />
+        <title>CSS</title>
+    </head>
+
+    <body>
+        <header class="onglet">
+            <div class="bandeau_html_petit">
+                <a href="../html/menu_html.html">
+                    <div class="bandeau_html_petit_coloré">
+                        <aside class="html_petit">
+                            <h1 class="description_petit">HTML</h1>
+                            <ul class="petit_html">
+                                <li class="description_petit">HyperText Markup Language</li>
+                                <li class="description_petit">Définit le contenu de la page</li>
+                            </ul>
+                        </aside>
+                        <figure class="petit_html">       
+                            <img src="../images/html.png" class="petit_html">
+                        </figure>
+                    </div>
+                </a>
+            </div>
+            <div class="bandeau_css_grand">
+                <figure class="grand_css">
+                    <img src="../images/css.png" class="grand_css">
+                </figure>
+                <aside class="css_grand">
+                    <h1 class="description_grand">CSS</h1>
+                    <ul>
+                        <li class="description_grand_css">Cascading Style Sheets</li>
+                        <li class="description_grand_css">Définit la mise en page</li>
+                    </ul>
+                </aside>
+            </div>
+        </header>
+        <div class="conteneur">
+            <div class="colonne_gauche">
+                <a href="#article1" class="article1">
+                    <article class="CSS_1">
+                        <h2>Principe</h2>
+                        <p class="commandes">
+                            Sur le principe, la mise en page avec CSS est assez simple, c'est surtout
+                            avec de la pratique qu'on apprend les subtilités.
+                            <span class="plus_css">Cliquez sur la bulle pour afficher plus</span>
+                            Une commande CSS s'écrit en indiquant dans un premier temps le ou les éléments concernés par la commande, puis par les caractéristique de la commande. Commençons le ciblage avec un cas simple, imaginons que nous voudrions colorier en bleu et mettre en gras tout les paragraphes d'une page, nous savons déjà que la balise de paragraphe est "p". Ainsi pour cibler tout les paragraphes, on a juste à écrire "p" au début. Pour ce qui est des caractéristiques elles sont données juste après entre accolades. Une caractéristique se donne de cette manière :<br><br>
+                            <span class="center">type de caractéristique: donnée/valeur;</span><br>
+                            Pour que cela soit plus parlant, reprenons le cas de notre exemple, pour colorier en bleu et mettre en gras tout les paragraphes d'une page il faut faire :<br><br>
+                            p<br>
+                            {<br>
+                            <span class="decalage_1">color: blue;<br>
+                            font-weight: bold;
+                            </span><br>
+                            }<br><br>
+                        </p>
+                    </article>
+                </a>
+                <a href="#article2" class="article2">
+                    <article class="CSS_2">
+                        <h2>Fond</h2>
+                        <p class="commandes">
+                            Maintenant que le principe et le ciblage sont compris, 
+                            nous allons traiter quelques exemples, comme le fond dans cette
+                            <span class="plus_css">Cliquez sur la bulle pour afficher plus</span>
+                            section. Gardez cependant à l'idée que les techniques d'affichages étant tellement nombreuses, tout ne sera pas traité dans ce site, loin de là. Pour progresser il faut s'entraîner, chercher sur internet comment faire tel ciblage, tel affichage, ou encore faire des formations gratuites comme sur Openclassrooms. Avant de lister des commandes, nous allons voir comment donner des couleurs. On peut tout d'abord donner le nom de la couleur en anglais (pratique mais limité), on peut aussi donner son code hexadecimal ou encore utiliser la fonction rgb(X,X,X) (chaque X est respectivement la quantité de rouge, vert, bleu, valeur allant de 0 à 255), ou rgba (même fonction mais avec une quatrième donnée, l'opacité comprise entre 0 et 1) (l'opacité d'un élément peut aussi se définir séparement avec la commande "opacity" puis en donnant une valeur entre 0 et 1). Voici une petite liste de commandes pour le fond : <br>
+                            <ul class="CSS">
+                                <li class="coms"><span class="exemple">background-color : couleur;</span> : définit une couleur au fond (peut être le fond d'une div ou de toute la page par exemple, pensez à remplacer "couleur" par la couleur souhaitée).
+                                </li>
+                                <li class="coms"><span class="exemple">background-attachment: fixed;</span> : fixe (rend immobile) le fond par rapport au reste de la page.</li>
+                                <li class="coms"><span class="exemple">background-repeat: <br> no-repeat/repeat/repeat-x/repeat-y;</span> : Par défaut l'image de fond se répète de façon infinie en mosaïque, vous pouvez changer cela en ne séléctionnant qu'une seule des options proposées ici et faire répéter en colonne, en ligne ou pas du tout.</li>
+                                <li class="coms"><span class="exemple">background-position:<br> XXpx XXpx/top/bottom/center/left/right;</span> : Définit la position du fond (pertinent uniquement lorsque le fond ne se répète pas), comme vous pouvez le remarquer vous pouvez positionner le fond avec des mots (peu précis mais pratique)(vous pouvez les combiner et par exemple mettre "bottom left"), ou alors avec des coordonées souvent données en pixels (px).</li>
+                                <li class="coms"><span class="exemple">background: ;</span> : En réalité les commandes précédentes sont peu utile même si il est bien de les introduire pour comprendre car vous pouvez mettre l'ensemble des paramètres dans "background", séparez uniquement chaque caractéristique par des espaces. C'est également ici qu'on définit l'image de fond (si ce n'est pas une simple couleur), en rajoutant la caractéristique "url()" (mettre un lien web ou un chemin relatif dans votre dossier vers une image, attention dans ce cas le chemin relatif sera fait par rapport au fichier CSS et non au fichier html. Si vous désirez mettre plusieurs images, une fois les caractéristiques de la première rentrées, mettez une virgule et définissez la deuxième (url ou couleur etc), en cas de chevauchement des images, la première image définie dans le code sera prioritaire.</li>
+                            </ul>
+                        </p>
+                    </article>
+                </a>
+                <a href="#article3" class="article3">
+                    <article class="CSS_3">
+                        <h2>Blocs et images</h2>
+                        <p class="commandes">
+                            Avant de parler des blocs et des images, gardez en tête que les
+                            commandes citées ne vont pas forcément exclusivement
+                            <span class="plus_css">Cliquez sur la bulle pour afficher plus</span>
+                            dans une seule catégorie, je les ai rangé de cette manière car c'est souvent pour ce type d'élément qu'on utilise telle commande mais cela ne constitue en aucun cas une règle générale. À vous d'essayer, d'adapter, d'improviser, CSS s'apprend en pratiquant. Gardez aussi en tête la simplicité des commandes, l'anglais mis à part, définir un paramètre est assez intuitif, par exemple pour la couleur on dit littéralement "couleur : (nom couleur)". Ainsi, si vous avez une idée de paramètre en tête, la façon de le définir sera très sûrement très proche si ce n'est exactement le terme en anglais. Dans cette section nous allons aussi aborder les dimensions, il est donc temps de faire un point. Il y a trois pricipales techniques pour donner des dimentions, en px, em et %. Px est une unité absolue, em une unité relative, c'est à dire qui dépend de comment était l'élément par défaut (utiliser em peut être très pratique si la taille ou posistion d'un objet par défaut est proche de celle que vous chercher, au lieu de rechercher à la définir de façon absolue). On peut aussi utiliser %, ainsi si on dit que la hauteur d'un bloc est de 50%, le bloc fera 50% de la page en hauteur ou 50% du bloc dans lequel ce bloc est lui même contenu si ce bloc est dans un autre. (Les % fonctionnent aussi pour le paramétrage de position).
+                            Voici une petite liste de commandes généralement utilisée pour les images et les blocs : <br>
+                            <ul class="CSS">
+                                <li class="coms"><span class="exemple">float: left/right;</span> : Permet aux textes qui suivent l'image de se mettre à côté de cette dernière, en mettant l'image à gauche/droite.</li>
+                                <li class="coms"><span class="exemple">clear: left/right/both;</span> : Annule les effets "float" en cours pour les images à gauche, droite ou les deux. Cette fonction est souvent utilisée lorsqu'on veut qu'un premier texte se trouve à côté de l'image mais que le texte suivant soit affiché après l'image.</li>
+                                <li class="coms"><span class="exemple">border: Xpx color type;</span> : définit une bordure selon plusieurs paramètres (couleurs, épaisseur, type), les différents types servent à définir des bordures continues, en pointillets etc... Les voici : <span class="bold">none, solid, dotted, dashed, double, groove, ridge, inset, outset. </span> Notez qu'on peut définir une bordure que sur certains côtés spécifiques si on le désire, pour une bordure juste en haut par exemple on remplace "border" par "border-top" (left/right/bottom pour les autres côtés). Tout comme "background", "border" est une commande qui en regroupe plusieurs, mais au besoin n'hésitez pas à la rédecomposer ("border-width: ;" si vous voulez uniquement modifier l'épaisseur par exemple), ainsi si vous définissez une bordure mais que vous voulez par la suite modifier uniquement la <span class="exemple">couleur</span> de la bordure du <span class="exemple">dessus</span>, vous pouvez le faire avec "border-top-color: ;" (si vous définissez la bordure du haut comme bleue alors que vous aviez définir la bordure en entier comme rouge, votre bordure du haut sera bien bleue, c'est une règle CSS, plus votre ciblage est précis, plus il sera traité en priorité par l'ordinateur. (Cette règle vaut aussi pour le ciblage des balises, si vous définissez les "p" en bleu mais "p.montagnes" en vert alors "p.montagne" sera bien vert, quand bien même il est compris en tant que "p".</li>
+                                <li class="coms"><span class="exemple">border-radius: Xpx;</span> : Arrondit les coins du bloc, par défaut on ne rentre que le rayon sous le format Xpx mais on peut aussi faire des courbes éliptiques avec Xpx / Xpx, ou encore définir le rayon de chaque arrondi séparément sous le format Xpx Xpx Xpx Xpx.</li>
+                                <li class="coms"><span class="exemple">box-shadow: Xpx Xpx Xpx color (inset);</span> : définit une ombre au bloc, les deux premières valeurs sont pour le décalage horizontal et vertical de l'ombre, la troisième définit l'adoucissement du dégradé (mettre 0px pour une ombre brute et plus pour une ombre plus dégradée), la quatrième définit la couleur et enfin vous pouvez (ou non) rajouter inset si vous désirez que l'ombre se trouve à l'intérieur du bloc (pour par exemple donner un effet de prodondeur).</li>
+                                <li class="coms"><span class="exemple">width: Xpx;</span> : Définit la largeur d'un bloc, fonctionne aussi avec les unités "em" et %. Vous pouvez mettre "auto" en dimension si vous voulez que le bloc fasse pile la largeur de sorte à ce qu'il puisse afficher tout les éléments sans les couper.</li>
+                                <li class="coms"><span class="exemple">height: Xpx;</span> : Définit la hauteur d'un bloc, les mêmes unités sont acceptées.</li>
+                                <li class="coms"><span class="exemple">min/max-width: Xpx;</span> : Définit ici une largeur minimale (min-width) ou maximale (max-width) en cas de largeur variable, en effet si vous définisser votre largeur en %, elle sera susceptible de varier, si vous réduisez la fenêtre par exemple, la largeur étant ici définie en % par rapport à la largeur de la fenêtre, si la fenêtre change de dimentions le bloc fera de même. Ces fonctions sont pratiques pour définir des valeurs extrêmes à ne pas dépasser pour que la page reste lisible en toutes circonstances.</li>
+                                <li class="coms"><span class="exemple">min/max-height: Xpx;</span> : Même chose mais avec la hauteur.</li>
+                                <li class="coms"><span class="exemple">margin: Xpx;</span> : Définit la marge extérieure du bloc, distance à laquelle elle se trouve des éléments alentours. Notez que pour la quasi totalité des fois où une dimension est citée, c'est simplement à titre d'exemple mais que les autres (em, %) fonctionnent également, à vous de choisir l'unité en fonction de votre usage. Si vous désirez des marges inégales selon les côtés, vous pouvez écrire les dimensions comme ceci : "Xpx Xpx Xpx Xpx". (L'ordinateur met la même marge des quatre côtés quand il n'y a qu'une seule dimension). Pour savoir quel "Xpx" correspond à quel côté, le premier est celui du haut et pour les suivants il faut tourner dans le sens horaire. Une autre technique pour définir une marge différente selon les côtés est de redécomposer la fonction (margin-left: Xpx; etc), comme vu précédemment, si vous définissez une marge des quatre côtés de 10px mais une marge à gauche de 5px alors la marge à gauche aura priorité car le ciblage est plus précis. Notez qu'on peut également mettre "<span class="exemple">auto</span>" en tant que dimension dans ces fonctions, l'ordinateur déduira parfois l'emplacement logique auquel vous voudriez placer votre bloc (souvent au milieu).</li>
+                                <li class="coms"><span class="exemple">padding: Xpx;</span> : Même fonction et mêmes particularités mais cette fois ci avec la marge intérieure, si vous avez un bloc avec une bordure et du texte à l'intérieur, cette fonction est pratique pour que le texte ne soit pas collé au bord.</li>
+                                <li class="coms"><span class="exemple">overflow: visible/hidden/scroll/auto;</span> : Parfois, les éléments se trouvant à l'intérieur d'un bloc sont coupés, le bloc est trop petit (si on n'utilise pas "auto" dans les dimensions du bloc). C'est alors à vous de déterminer ce que vous faites de ce surplus de texte, vous pouvez faire dépasser le texte du bloc (visible), le cacher (hidden), mettre une barre de défilement (scroll) ou laisser l'ordinateur décider (auto). Vous pouvez également traiter uniquement le surplus dans une direction spécifique avec "overflow-x" et "overflow-y". Si on parle de cette page et des dimensions des articles, ils sont par défaut d'une certaine hauteur (et d'une largeur aussi mais elle ne change pas), le surplus est caché (overflow-y: hidden). Lorsqu'on clique sur l'article pas besoin de faire en sorte que le surplus soit visible, on ne veut toujours pas que le texte dépasse du bloc, en revanche on rend la hauteur automatique (height: auto;)
+                                </li>
+                                <li class="coms"><span class="exemple">word-wrap:break-word;</span> : Sert à casser les mots trop longs au sein d'un bloc (forcer le retour à la ligne quitte à couper le mot.</li>
+                                <li class="coms"><span class="exemple">display: flex;</span> : Commande à citer quand vous utilisez flexbox, un outil pratique pour positionner les éléments dans un bloc dont les commandes sont décrites ci-dessous.</li>
+                                <li class="coms"><span class="exemple">flex-direction: row/column;</span> : Place les éléments de votre bloc en ligne (row) ou en colonne (column). Vous pouvez également inverser l'ordre des éléments en rajoutant "-reverse" à la fin de la direction (exemple : row-reverse). Si vos éléments sont en colonne alors votre axe principal est vertical et votre axe secondaire est horizontal, inversement pour si vos éléments sont en ligne.</li>
+                                <li class="coms"><span class="exemple">flex-wrap: nowrap/wrap/wrap-reverse;</span> : Si votre bloc est trop petit pour accueillir tout ses éléments sur une seule ligne/colonne, cette commande définit si il doit ou non y avoir retour à la ligne (et si oui si cela se fait dans l'ordre normal ou l'ordre inverse).</li>
+                                <li class="coms"><span class="exemple">justify-content: ;</span> : Cette commande détermine l'alignement des éléments d'un bloc sur son axe principal. On peut les placer au début (en mettant comme valeur "flex-start"), à la fin (flex-end), au milieu (center), étiré sur tout l'axe avec de l'espace entre chaque élément (space-between), ou encore étiré sur tout l'espace avec des espaces entre chaque élément et aussi avec les bords (space-around).</li>
+                                <li class="coms"><span class="exemple">align-items: ;</span> : Détermine l'alignement des éléments sur l'axe secondaire. Pour étirer sur tout l'axe (comportement par défaut), donner la valeur "stretch", sinon pour autres comportements, utiliser flex-start, flex-end ou center. On peut aussi utiliser "baseline" qui aligne les éléments sur la ligne de base (semblable à flex-start). Notez que pour mettre un élément au centre de son contenant, mettre des marges extérieures automatiques à cet élément est souvent plus pratique et rapide que de déployer flexbox pour le contenant puis d'aligner ses éléments au centre sur un axe puis sur l'autre.</li>
+                                <li class="coms"><span class="exemple">align-self: flex-end;</span> : Cette commande sert à aligner un élément en particulier selon une certaine configuration (cela peut être utile lorsque vous voulez que tous vos éléments s'alignent au début sauf un par exemple). align-self est donc à appliquer sur l'élément en question et non sur le contenant. Ici "flex-end" comme valeur a été choisie pour l'exemple mais les autres fonctionnent, évidemment.</li>
+                                <li class="coms"><span class="exemple">align-content: ;</span> : Cette fonction sert à aligner vos éléments lorsque vous avez plusieurs lignes dans votre contenant. Elle peut prendre comme valeur flex-start, flex-end, center, space-between, space-around, stretch.
+                                </li>
+                                <li class="coms"><span class="exemple">order: X;</span> : Définit l'ordre dans lequel sont rangés les éléments (si celui par défaut ou son inversement ne vous convient pas et que vous voulez définir un ordre précis). Notez que par défaut l'ordre des éléments correspond à l'ordre d'apparition dans le code html. Cette fonction est à appliquer directement sur les éléments du contenant et non le contenant directement (comme align-self), donner en valeur un nombre entier.</li>
+                                <li class="coms"><span class="exemple">flex: X;</span> : Détermine dans quelle mesure un élément du contenant peut grossir par rapport aux autres, plus ce nombre est grand, plus l'élément pourra grossir.</li>
+                            </ul>
+                        </p>
+                    </article>
+                </a>
+            </div>
+            <div class="colonne_droite">
+                <a href="#article4" class="article4">
+                    <article class="CSS_4">
+                        <h2>Ciblage</h2>
+                        <p class="commandes">
+                            Le ciblage est une chose très importante en CSS. Comment faire 
+                            pour faire en sorte que la précision d'affichage que l'on
+                            <span class="plus_css">Cliquez sur la bulle pour afficher plus</span>
+                            souhaite ne s'applique qu'à l'élément souhaité ? C'est ici que vont intervenir les "classes" et les "id". En faisant votre code html vous avez pris soin de séparer en plusieurs classes les éléments en fonction de comment ils sont destinés à être affichés. Pour cibler les paragraphes ayant comme classe "bleu", il suffira de rajouter ".bleu" derrière le nom de balise. Ainsi pour colorier en bleu tout les paragraphes ayant cette classe il faut faire : <br><br>
+                            p.bleu <br>
+                            {<br>
+                            <span class="decalage_1">color: blue;</span><br>
+                            }<br><br>
+                            Pour cibler tout les éléments (titres, listes) ayant comme classe "bleu", il faut alors remplacer "p.bleu" par juste ".bleu", ainsi le contenu entre accolades concernera tout les éléments de cette classe.<br><br>
+                            Pour cibler avec "id" c'est la même chose mais il faut remplacer le point par "#". Vous pouvez ainsi cibler avec "p#bleu" ou juste "#bleu" ce qui reviendra au même car de toute façon vous ne pouvez utiliser l'id "bleu" qu'une fois par page, un seul élément sera donc ciblé.<br><br>
+                            Quelques ciblages supplémentaires :<br>
+                            <ul class="CSS">
+                                <li class="coms"><span class="bold">body</span> : Séléctionne toute la page.</li>
+                                <li class="coms"><span class="bold">A + B</span> (ex : h1 + p) : Séléctionne toutes les balises B situées <span class="exemple">juste</span> après des balises A.</li>
+                                <li class="coms"><span class="bold">A ~ B</span> : Séléctionne toutes les balises B situées après des balises A.</li>
+                                <li class="coms"><span class="bold">A > B</span> : Séléctionne toutes les balises B filles directes des balises A.</li>
+                                <li class="coms"><span class="bold">A B</span> : Séléctionne toutes les balises B descendantes des balises A.</li>
+                                <li class="coms"><span class="bold">A[title]</span> : Séléctionne toutes les balises A ayant un attribut title (cela fonctionne aussi avec d'autres attributs).</li>
+                                <li class="coms"><span class="bold">A[title=titre]</span> : Séléctionne toutes les balises A ayant exactement comme contenu dans la balise "title" : "titre".</li>
+                                <li class="coms"><span class="bold">A[title*=titre]</span> : Séléctionne toutes les balises A ayant au moins comme contenu dans la balise "title" : "titre", (cela fonctionne avec les autres attributs, par exemple "p[class*=article]" peut séléctionner des paragraphes ayant comme classe "article_1" ou encore "article_important").</li>
+                                <li class="coms"><span class="bold">.element:nth-child(1)</span> Permet de séléctionner des éléments qui ont la même classe (par exemple au sein d'un bloc), ici, la classe choisie comme exemple est "element" mais elle peut être autre chose, évidemment. le "1" à la fin signifie que vous ciblez le premier élément ayant cette classe, pour cibler le deuxième il faut mettre un "2" etc...</li>
+                                <li class="coms">Pour mettre plusieurs balises (par exemple séléctionner A <span class="exemple">et</span> B) il faut mettre les deux balises en les séparant par une virgule (A, B). </li>
+                            </ul> <br>
+                            <p class="commandes">Les ciblages ci-dessous sont interactifs, ils n'interviennent que dans certaines situations : </p>
+                            <ul class="CSS">
+                                <li class="coms"><span class="bold">A:hover</span> : Réalise l'affichage qui suit uniquement quand la souris passe devant la balise A (on peut par exemple rajouter une ombre sur un bloc quand la souris passe dessus). Pour cette balise interactive et celles qui suivent on peut toujours appliquer les fonctionnalités de ciblage d'une balise par rapport à une autre, par exemple "div:hover p" est un ciblage s'appliquant aux paragraphes contenus dans des "div", le tout quand la souris passe devant la "div".</li>
+                                <li class="coms"><span class="bold">a:active</span> Réalise l'affichage quand le lien est cliqué (ne fonctionne que sur les balises de lien).</li>
+                                <li class="coms"><span class="bold">a:visited</span> : Réalise l'affichage uniquement sur les liens déjà visités.</li>
+                                <li class="coms"><span class="bold">A:focus</span> : Réalise l'affichage sur la section lancée, par exemple quand vous cliquez sur la barre de recherche Google et que le petit curseur d'écriture apparaît, vous êtes "focus" dessus. Je me sers aussi par exemple de cette fonctionnalité pour enlever l'ombre des articles quand vous avez cliqué dessus : par défaut il n'y a pas d'ombre, quand vous passez la souris dessus (hover) elle apparaît, et quand vous cliquez dessus (focus), elle redisparaît.</li>
+                            </ul>
+                        </p>
+                    </article>
+                </a>
+                <a href="#article5" class="article5">
+                    <article class="CSS_5">
+                        <h2>Textes</h2>
+                        <p class="commandes">
+                            Rien de bien compliqué ici, nous allons voir quelques 
+                            commandes pour définir l'affichage de textes. Pour voir
+                            <span class="plus_css">Cliquez sur la bulle pour afficher plus</span>
+                            comment définir une couleur, allez voir l'article "Fond", pour voir comment définir une dimension, allez voir l'article "Blocs et images".
+                            <ul class="CSS">
+                                <li class="coms"><span class="exemple">color: couleur;</span> : Définit la couleur du texte séléctionné (remplacer "couleur") par la couleur souhaitée.</li>
+                                <li class="coms"><span class="exemple">font-weight: bold;</span> : Met le texte en gras.
+                                </li>
+                                <li class="coms"><span class="exemple">font-size: Xpx;</span> : Définit la taille du texte, ici l'unité "px" a été choisie pour l'exemple, mais "em" fonctionne aussi et s'adapte aux dispositifs d'écran. On peut également définir la taille de manière moins précise mais plus simple avec comme valeur "small", "medium" etc...</li>
+                                <li class="coms"><span class="exemple">font-family: ;</span> : Définit la police d'écriture. Il est déconseillé de n'en donner qu'une seule car il n'est pas garanti que l'utilisateur ou son navigateur prenne en charge la police souhaitée, ainsi énoncez en une puis à défaut de celle-ci une autre, puis une autre etc, le tout en les séparant par des virgules. Si le nom de la police est en plusieurs mots, entourer de guillemets. Voici une petite liste de police accéptée par une grande quantité d'ordinateurs et de navigateurs : arial, arial black, comic sans ms, courier new, georgia, impact, times new roman, trebuchet ms, verdana. À la fin des polices énoncées dans l'ordre de préférence, ajouter la police "sans-serif", toujours prise en charge.</li>
+                                <li class="coms"><span class="exemple">font-style: italic;</span> : Met le texte en italique.</li>
+                                <li class="coms"><span class="exemple">text-decoration: ;</span> : Définit des décorations au texte, pour souligner donner comme valeur "underline", pour une ligne au dessus mettre "overline", "line-through" pour barrer et "blink" pour faire clignoter (cette dernière valeur n'est pas prise en charge pour Google chrome et Internet explorer). Surligner ne se fait pas avec cette fonction mais en coloriant une partie du fond du texte (voir article "fond").</li>
+                                <li class="coms"><span class="exemple">text-align: ;</span> : Définit l'alignement du texte, peut prendre comme valeur "left", "right", "center", "justify". Faisant confiance à votre niveau exceptionnel en anglais, je vous laisse deviner ce que font ces valeurs.</li>
+                                <li class="coms"><span class="exemple">text-shadow: Xpx Xpx Xpx color;</span> : Définit une ombre à chaque lettre dans le texte qui a été séléctionné, fonctionne de la même manière que les ombres pour un bloc. (Voir "box-shadow").</li>
+                            </ul>
+                        </p>
+                    </article>
+                </a>
+                <a href="#article6" class="article6">
+                    <article class="CSS_6">
+                        <h2>Astuces</h2>
+                        <p class="commandes">
+                            Pour terminer, voici quelques astuces et commandes
+                            supplémentaires qui peuvent aider (cette section se résume en
+                            <span class="plus_css">Cliquez sur la bulle pour afficher plus</span>
+                            "trucs et astuces en vrac"). Je mettrai sûrement cette section à jour de temps en temps.
+                            <ul class="CSS">
+                                <li class="coms"><span class="exemple">list-style-type: none;</span> : Cette commande retire les puces (points) d'une liste à puces.</li>
+                                <li class="coms"><span class="exemple">list-style-image:url();</span> : Cette commande met une image à la place d'une puce, mettre un lien ou chemin relatif dans l'url.</li>
+                                <li class="coms"><span class="exemple">display: ;</span> : Cette fonction a plusieurs utilités, d'abord elle peut définir le comportement d'un élément, par exemple si on veut qu'un élément se comporte comme un bloc (même si il n'en est pas un au départ), il faut donner la valeur "block", "inline" pour un non bloc et "inline-block" pour un non block à qui on peut quand même donner des dimensions. Ces valeurs peuvent servir quand les fonctions de taille ou d'emplacement ne fonctionnent pas comme vous le souhaiteriez par exemple. Une autre valeur possible, qui n'a pas la même utilité est "none". Tout élément ayant dans sa description CSS "display: none;" ne sera pas affiché. L'intérêt est souvent de masquer un élément uniquement sous certaines conditions, comme le "Cliquez sur la bulle pour afficher plus" qui disparaît quand vous cliquez sur la bulle (le laisser serait encombrant et inutile), ou alors les symboles "&lt;/&gt;" et "{}" sur la page de menu qui sont cachés par défaut (display: none;) mais qui sont visibles quand on passe sa souris devant le bloc. Pour que les symboles apparaissent quand on passe la souris devant le bloc et pas uniquement quand on la passe devant "HTML" ou "CSS", on cible comme vu précédemment dans l'article de ciblage : <br><br>
+                                <span class="center">"section:hover span.symboles"</span><br>
+                                Le bloc est une section, et il contient un texte lui même contenant des "span" ayant comme classe "symboles". Ainsi on retrouve la logique, "section:hover" traduit le fait que l'action se déroule quand on passe la souris devant le bloc, le fait qu'il y ait deux ciblages traduit que on cible une balise par rapport à l'autre, l'espace entre les deux signifie que le second ciblage est descendant du premier et "span.symboles" est la destination. On met "display: none;" dans "span.symboles", et "display: inline;" dans "section:hover span.symboles". Ici j'ai mis "inline" mais le plus important était juste d'annuler l'effet "none".</li>
+                                <li class="coms"><span class="exemple">-webkit-box-shadow: 0 0 10px white;<br>
+                                box-shadow: 0 0 10px white;</span> : (Effet obtenu en 2 commandes donc 2 lignes) Petite astuce pour afficher de l'ombre de tous les côtés (comme sur ces articles quand vous passez votre souris devant sans les cliquer), adaptez les paramètres à votre guise.</li>
+                                <li class="coms">Enfin, écrire des commentaires en CSS se fait ce cette manière : /*commentaire*/. Gardez en tête que ce marquage a pour effet de ne pas faire prendre en compte par l'ordinateur la partie qui se trouve au centre de votre marquage, vous pouvez évidemment vous en servir pour écrire des commentaires mais aussi pour désactiver (sans pour autant effacer) de votre code certaines commandes pour voir comment votre page se comporte sans telle ou telle commande (pratique lorsque vous établissez la mise en page de votre site.</li>
+                            </ul>
+                        </p>
+                    </article>
+                </a>
+            </div>      
+        </div>
+    </body>
+</html>
